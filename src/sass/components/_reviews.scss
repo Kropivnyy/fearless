@@ -1,0 +1,29 @@
+.reviews {
+  text-align: center;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 81.25%;
+    min-height: 110px;
+    max-height: 430px;
+    background: url(../images/reviews/collage.png) no-repeat;
+    background-size: cover;
+    margin: 0 auto 194px;
+  }
+
+  &__blog {
+    width: 78.125%;
+    margin: 0 auto;
+    background-color: $color-gray-white;
+
+    &-text {
+      width: 43.75%;
+      margin: 0 auto;
+      padding-top: 52px;
+      font: 500 13px $primary-font-family;
+      border-bottom: 1px solid $color-grey;
+      padding-bottom: 10px;
+    }
+  }
+}
