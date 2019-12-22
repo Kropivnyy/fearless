@@ -1,3 +1,9 @@
+.container {
+  width: 320px;
+  padding: 120px 40px 0;
+  margin: 0 auto;
+}
+
 .footer {
   background-color: $color-lavender-pink;
 }
@@ -6,27 +12,26 @@
   margin: 0 auto;
   font-family: $secondary-font-family;
   text-transform: uppercase;
-  width: 150px;
-}
-
-.footer__title--pink {
-  font-size: 18px;
-  color: $primary-pink-color;
-  line-height: 20px;
   text-align: left;
-}
-
-.footer__title--crimson {
-  font-size: 36px;
-  color: $primary-hover-color;
-  line-height: 32px;
-  text-align: left;
+  &--pink {
+    font-size: 18px;
+    color: $primary-pink-color;
+    line-height: 20px;
+  }
+  &--crimson {
+    margin-top: 30px;
+    font-size: 36px;
+    color: $primary-hover-color;
+    line-height: 32px;
+  }
 }
 
 .footer__social {
+  margin: 48px 0 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
+  width: 156px;
 }
 
 .footer__social a {
@@ -38,39 +43,53 @@
   background-color: $primary-pink-color;
   width: 33px;
   height: 33px;
-}
-
-.footer__icons:hover {
-  background-color: $color-light-crimson;
+  &:hover {
+    background-color: $color-light-crimson;
+  }
+  &--githab {
+    background-image: url(images/icons/githab.svg);
+  }
+  &--telegram {
+    background-image: url(images/icons/telegram.svg);
+  }
+  &--facebook {
+    background-image: url(images/icons/facebook.svg);
+  }
 }
 
 .footer__text {
+  margin-top: 50px;
   font-size: 13px;
   font-family: $primary-font-family;
   color: $primary-black-color;
   line-height: $primary-font-height;
-  text-align: left;
-}
-
-.footer__text--color {
-  color: $primary-hover-color;
-}
-
-.footer__text--bootom {
-  font-size: 13px;
-  font-family: $primary-font-family;
-  font-weight: 400;
-  font-style: normal;
-  color: $primary-grey-color;
-  line-height: 19px;
   text-align: center;
+  &--color {
+    color: $primary-hover-color;
+  }
 }
 
-.footer__text--bootom::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: $primary-black-color;
-  opacity: 0.078;
+.footer-bootom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  &__text {
+    font-size: 13px;
+    font-family: $primary-font-family;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    color: $primary-grey-color;
+    line-height: 19px;
+    &--before::before {
+      content: '';
+      margin: 48px 0 26px;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $primary-black-color;
+      opacity: 0.078;
+    }
+  }
 }

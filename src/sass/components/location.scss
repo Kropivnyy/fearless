@@ -1,8 +1,13 @@
 .locations {
-  background-color: $color-lavender-pink;
+  background: linear-gradient(
+    to bottom,
+    $primary-white-color 100px,
+    $color-lavender-pink 100px,
+    $color-lavender-pink 100%
+  );
 }
 
-.box {
+.location-card {
   margin: 20px auto;
   padding: 50px 38px;
   border-radius: 25px;
@@ -11,10 +16,10 @@
   width: 253px;
 }
 
-.box__title,
-.box__subtitle,
-.box__text,
-.box__time {
+.location-card__title,
+.location-card__subtitle,
+.location-card__text,
+.location-card__time {
   font-family: $primary-font-family;
   font-weight: 500;
   font-style: normal;
@@ -22,7 +27,7 @@
   width: 150px;
 }
 
-.box__title {
+.location-card__title {
   color: $primary-white-color;
   line-height: 18px;
   text-align: center;
@@ -30,40 +35,38 @@
   border-radius: 5px;
   padding-bottom: 3px;
   margin-bottom: 36px;
+  &--maize {
+    background-color: $products-maize-color;
+    width: 62px;
+    height: 18px;
+  }
+  &--green {
+    background-color: $products-green-color;
+    width: 107px;
+    height: 18px;
+  }
 }
 
-.box__title--maize {
-  background-color: $products-maize-color;
-  width: 62px;
-  height: 18px;
-}
-
-.box__title--green {
-  background-color: $products-green-color;
-  width: 107px;
-  height: 18px;
-}
-
-.box__subtitle {
+.location-card__subtitle {
   color: $primary-black-color;
   line-height: $primary-font-height;
   text-align: left;
 }
 
-.box__text {
+.location-card__text {
   color: $primary-grey-color;
   line-height: 19px;
   text-align: left;
 }
 
-.box__time {
+.location-card__time {
   color: $primary-pink-color;
   line-height: $primary-font-height;
   text-align: left;
 }
 
-.box__text--before::before,
-.box__text--after::after {
+.location-card__text--before::before,
+.location-card__text--after::after {
   content: '';
   display: block;
   background-color: $primary-black-color;
@@ -73,14 +76,14 @@
   margin: 35px 0;
 }
 
-.box-buttons {
+.location-card-buttons {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
 }
 
-.box__button {
+.location-card__button {
   text-align: center;
   margin: 13px auto 0;
   cursor: pointer;
@@ -93,22 +96,32 @@
   height: 41px;
   border-radius: 25px;
   border-style: none;
-}
-
-.box__button--locations {
-  color: $primary-white-color;
-  background-color: $primary-hover-color;
-}
-
-.box__button--locations:hover {
-  background-color: $color-light-crimson;
-}
-
-.box__button--franchise {
-  color: $primary-hover-color;
-  background-color: $primary-white-color;
-}
-
-.box__button--franchise:hover {
-  background-color: $color-smoky-white;
+  &--locations {
+    color: $primary-white-color;
+    background-color: $primary-hover-color;
+    &::after {
+      content: '';
+      display: inline-block;
+      background-image: url(images/icons/chevron_right_white.svg);
+      width: 18px;
+      height: 18px;
+    }
+    &:hover {
+      background-color: $color-light-crimson;
+    }
+  }
+  &--franchise {
+    color: $primary-hover-color;
+    background-color: $primary-white-color;
+    &::after {
+      content: '';
+      display: inline-block;
+      background-image: url(./images/icons/chevron_right_red.svg);
+      width: 18px;
+      height: 18px;
+    }
+    &:hover {
+      background-color: $color-smoky-white;
+    }
+  }
 }
