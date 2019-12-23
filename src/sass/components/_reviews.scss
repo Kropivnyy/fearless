@@ -1,18 +1,20 @@
+// Collage
+
+.collage {
+  margin-bottom: 195px;
+
+  &__img {
+    display: block;
+    width: 80%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}
+
 // Reviews blog
 
 .reviews {
   text-align: center;
-
-  &::before {
-    content: '';
-    display: block;
-    width: 81.25%;
-    min-height: 110px;
-    max-height: 430px;
-    background: url(../images/reviews/collage.png) no-repeat;
-    background-size: cover;
-    margin: 0 auto 194px;
-  }
 
   &__blog {
     width: 78.125%;
@@ -20,26 +22,13 @@
     background-color: $color-gray-white;
     position: relative;
 
-    &::before {
-      // content: '';
-      // display: block;
-      // width: 85px;
-      // height: 85px;
-      // // background: url(../images/reviews/testimonials1.jpg);
-      // position: absolute;
-      // transform: translateX(50%);
-      // right: 50%;
-      // top: -115px;
-      // border-radius: 50%;
-    }
-
     &-box {
       width: 43.75%;
       margin: 0 auto;
       padding: 52px 0 33px;
 
       &-text {
-        font: 500 13px $primary-font-family;
+        font: 500 0.76em $primary-font-family;
         color: $primary-black-color;
         line-height: 2.385;
         border-bottom: 1px solid $color-grey;
@@ -105,7 +94,7 @@
   margin: 0 auto 32px;
 
   &-text {
-    font: 400 13px $primary-font-family;
+    font: 400 0.76em $primary-font-family;
     color: $primary-black-color;
     text-transform: capitalize;
     margin-bottom: 32px;
@@ -131,7 +120,7 @@
     height: 16px;
     background-color: $color-grey;
     border-radius: 50%;
-    @include transition;
+    transition: $primary-hover-transition;
 
     &:not(:last-child) {
       margin-right: 18px;
@@ -143,7 +132,7 @@
       border-radius: 0%;
       background: url(../images/reviews/home.png) no-repeat center;
       outline: none;
-      @include transition;
+      transition: $primary-hover-transition;
     }
   }
 }
