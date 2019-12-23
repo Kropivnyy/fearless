@@ -1,4 +1,4 @@
-.container {
+.footer-container {
   width: 320px;
   padding: 120px 40px 0;
   margin: 0 auto;
@@ -43,17 +43,21 @@
   background-color: $primary-pink-color;
   width: 33px;
   height: 33px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color $primary-hover-transition;
   &:hover {
     background-color: $color-light-crimson;
   }
-  &--githab {
-    background-image: url(images/icons/githab.svg);
+  &--github {
+    background-image: url(../images/icons/github.svg);
   }
   &--telegram {
-    background-image: url(images/icons/telegram.svg);
+    background-image: url(../images/icons/telegram.svg);
   }
   &--facebook {
-    background-image: url(images/icons/facebook.svg);
+    background-image: url(../images/icons/facebook.svg);
   }
 }
 
@@ -70,10 +74,16 @@
 }
 
 .footer-bootom {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  &--border {
+    border-top: 2px solid;
+    border-color: rgba(0, 0, 0, 0.078);
+    padding: 26px 0;
+  }
   &__text {
     font-size: 13px;
     font-family: $primary-font-family;
@@ -82,14 +92,5 @@
     font-style: normal;
     color: $primary-grey-color;
     line-height: 19px;
-    &--before::before {
-      content: '';
-      margin: 48px 0 26px;
-      display: block;
-      width: 100%;
-      height: 2px;
-      background-color: $primary-black-color;
-      opacity: 0.078;
-    }
   }
 }

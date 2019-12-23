@@ -1,4 +1,4 @@
-.locations {
+.locations--background {
   background: linear-gradient(
     to bottom,
     $primary-white-color 100px,
@@ -33,7 +33,6 @@
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
-  padding-bottom: 3px;
   margin-bottom: 36px;
   &--maize {
     background-color: $products-maize-color;
@@ -81,6 +80,7 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  background-color: $color-lavender-pink;
 }
 
 .location-card__button {
@@ -99,12 +99,14 @@
   &--locations {
     color: $primary-white-color;
     background-color: $primary-hover-color;
+    transition: background-color $primary-hover-transition;
     &::after {
       content: '';
       display: inline-block;
-      background-image: url(images/icons/chevron_right_white.svg);
+      background-image: url(../images/icons/chevron_right_white.svg);
       width: 18px;
       height: 18px;
+      transform: translate(50%, 25%);
     }
     &:hover {
       background-color: $color-light-crimson;
@@ -113,12 +115,14 @@
   &--franchise {
     color: $primary-hover-color;
     background-color: $primary-white-color;
+    transition: background-color $primary-hover-transition;
     &::after {
       content: '';
       display: inline-block;
-      background-image: url(./images/icons/chevron_right_red.svg);
+      background-image: url(../images/icons/chevron_right_red.svg);
       width: 18px;
       height: 18px;
+      transform: translate(50%, 25%);
     }
     &:hover {
       background-color: $color-smoky-white;

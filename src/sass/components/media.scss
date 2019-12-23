@@ -1,0 +1,125 @@
+@media (min-width: 768px) {
+  .locations-container {
+    min-width: 768px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+
+  .locations {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .location-card {
+    width: 224px;
+    margin: 20px 0 0;
+    padding: 50px 32px;
+  }
+
+  .location-card__text--before::before,
+  .location-card__text--after::after {
+    width: 100%;
+  }
+
+  .location-card-buttons {
+    width: 100%;
+    margin: 78px auto;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .location-card__button {
+    line-height: 50px;
+    &--locations {
+      width: 199px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    &--franchise {
+      width: 177px;
+      height: 50px;
+    }
+  }
+
+  .footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__title {
+    width: 320px;
+    &--pink {
+      font-size: 26px;
+      line-height: 33px;
+    }
+    &--crimson {
+      font-size: 51px;
+      line-height: 49px;
+    }
+  }
+
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .footer__social {
+    margin: 0;
+  }
+
+  .footer-bootom {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1280px) {
+  .locations-container {
+    min-width: 1280px;
+    padding: 0 112px;
+  }
+
+  .location-card {
+    width: 338px;
+    padding: 50px 52px;
+  }
+
+  .location-card__title,
+  .location-card__subtitle,
+  .location-card__text,
+  .location-card__time {
+    font-size: $primary-font-size;
+    width: 100%;
+    line-height: 28px;
+  }
+
+  .location-card__title {
+    line-height: 28px;
+    &--maize {
+      width: 73px;
+      height: 28px;
+    }
+    &--green {
+      width: 136px;
+      height: 28px;
+    }
+  }
+
+  .footer__title {
+    width: 500px;
+    &--pink {
+      font-size: 30px;
+      line-height: 38px;
+    }
+    &--crimson {
+      font-size: 60px;
+      line-height: 52px;
+    }
+  }
+
+  .footer__text {
+    font-size: $primary-font-size;
+  }
+}
