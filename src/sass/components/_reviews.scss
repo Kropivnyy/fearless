@@ -49,41 +49,17 @@
   }
 
   &__card-one::before {
-    content: '';
-    display: block;
-    width: 85px;
-    height: 85px;
-    position: absolute;
-    transform: translateX(50%);
-    right: 50%;
-    top: -115px;
-    border-radius: 50%;
+    @include reviews-pseudo-element;
     background: url(../images/reviews/testimonials1.jpg);
   }
 
   &__card-two::before {
-    content: '';
-    display: block;
-    width: 85px;
-    height: 85px;
-    position: absolute;
-    transform: translateX(50%);
-    right: 50%;
-    top: -115px;
-    border-radius: 50%;
+    @include reviews-pseudo-element;
     background: url(../images/reviews/testimonials2.jpg) no-repeat;
   }
 
   &__card-three::before {
-    content: '';
-    display: block;
-    width: 85px;
-    height: 85px;
-    position: absolute;
-    transform: translateX(50%);
-    right: 50%;
-    top: -115px;
-    border-radius: 50%;
+    @include reviews-pseudo-element;
     background: url(../images/reviews/testimonials3.jpg) no-repeat;
   }
 }
@@ -91,7 +67,7 @@
 // Reviews title
 
 .reviews__title {
-  margin: 0 auto 32px;
+  margin: 0 auto 145px;
 
   &-text {
     font: 400 0.76em $primary-font-family;
