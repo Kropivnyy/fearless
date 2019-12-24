@@ -1,48 +1,55 @@
 @font-face {
-  font-family: 'DM Sans', sans-serif;
-  src: url('DMSans-Regular.ttf');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'DM Sans', sans-serif;
-  src: url('DMSans-Italic.ttf');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'DM Sans', sans-serif;
-  src: url('DMSans-Medium.ttf');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'DM Sans', sans-serif;
-  src: url('DMSans-MediumItalic.ttf');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'DM Sans', sans-serif;
-  src: url('DMSans-Bold.ttf');
+  font-family: "DMSans";
+  src: url("../fonts/DMSans-Bold.woff") format("woff"),
+    url("../fonts/DMSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'DM Sans', sans-serif;
-  src: url('DMSans-BoldItalic.ttf');
+  font-family: "DMSans";
+  src: url("../fonts/DMSans-BoldItalic.woff") format("woff"),
+    url("../fonts/DMSans-BoldItalic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Titan One', cursive;
-  src: url('TitanOne-Regular.ttf');
+  font-family: "DMSans";
+  src: url("../fonts/DMSans-Italic.woff") format("woff"),
+    url("../fonts/DMSans-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("../fonts/DMSans-Medium.woff") format("woff"),
+    url("../fonts/DMSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("../fonts/DMSans-MediumItalic.woff") format("woff"),
+    url("../fonts/DMSans-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("../fonts/DMSans-Regular.woff") format("woff"),
+    url("../fonts/DMSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TitanOne";
+  src: url("../fonts/TitanOne-Regular.woff") format("woff"),
+    url("../fonts/TitanOne-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }

@@ -1,10 +1,11 @@
-@import 'helpers/variables';
-@import 'helpers/hidden';
-@import 'helpers/mixins';
+@import './helpers/variables.scss';
+@import './helpers/hidden.scss';
+@import './helpers/mixins.scss';
 @import 'helpers/placeholders';
-@import 'normalize';
-@import 'fonts';
-@import 'base';
+@import './normalize.scss';
+@import './fonts.scss';
+@import './base.scss';
 
 /* Components */
-    
+
+@import './components/section-products.scss';
