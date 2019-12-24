@@ -81,6 +81,25 @@
     padding: 0 112px;
   }
 
+  .locations {
+    background-image: url(../images/sectionbg2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .locations {
+      background-image: url(../images/sectionbg2@2.png);
+    }
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 3) {
+    .locations {
+      background-image: url(../images/sectionbg2@3.png);
+    }
+  }
+
   .location-card {
     width: 338px;
     padding: 50px 52px;
