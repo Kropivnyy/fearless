@@ -1,5 +1,5 @@
 .locations--background {
-  background: linear-gradient(
+  background-image: linear-gradient(
     to bottom,
     $primary-white-color 100px,
     $color-lavender-pink 100px,
@@ -40,7 +40,7 @@
     height: 18px;
   }
   &--green {
-    background-color: $products-green-color;
+    background: $products-green-color;
     width: 107px;
     height: 18px;
   }
