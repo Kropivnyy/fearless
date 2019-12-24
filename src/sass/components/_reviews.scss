@@ -49,17 +49,17 @@
   }
 
   &__card-one::before {
-    @include reviews-pseudo-element;
+    @extend %reviews-pseudo-element;
     background: url(../images/reviews/testimonials1.jpg);
   }
 
   &__card-two::before {
-    @include reviews-pseudo-element;
+    @extend %reviews-pseudo-element;
     background: url(../images/reviews/testimonials2.jpg) no-repeat;
   }
 
   &__card-three::before {
-    @include reviews-pseudo-element;
+    @extend %reviews-pseudo-element;
     background: url(../images/reviews/testimonials3.jpg) no-repeat;
   }
 }
