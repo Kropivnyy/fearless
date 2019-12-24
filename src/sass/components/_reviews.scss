@@ -1,0 +1,114 @@
+// Collage
+
+.collage {
+  margin-bottom: 195px;
+
+  &__img {
+    display: block;
+    width: 80%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}
+
+// Reviews blog
+
+.reviews {
+  text-align: center;
+
+  &__blog {
+    width: 78.125%;
+    margin: 0 auto 20px;
+    background-color: $color-gray-white;
+    position: relative;
+
+    &-box {
+      width: 43.75%;
+      margin: 0 auto;
+      padding: 52px 0 33px;
+
+      &-text {
+        font: 500 0.76em $primary-font-family;
+        color: $primary-black-color;
+        line-height: 2.385;
+        border-bottom: 1px solid $color-grey;
+        padding: 10px 0;
+        position: relative;
+
+        &::before {
+          content: '';
+          display: block;
+          width: 54px;
+          height: 41px;
+          background: url(../images/reviews/blockquote.png) no-repeat center;
+          position: absolute;
+          left: -55px;
+        }
+      }
+    }
+  }
+
+  &__card-one::before {
+    @extend %reviews-pseudo-element;
+    background: url(../images/reviews/testimonials1.jpg);
+  }
+
+  &__card-two::before {
+    @extend %reviews-pseudo-element;
+    background: url(../images/reviews/testimonials2.jpg) no-repeat;
+  }
+
+  &__card-three::before {
+    @extend %reviews-pseudo-element;
+    background: url(../images/reviews/testimonials3.jpg) no-repeat;
+  }
+}
+
+// Reviews title
+
+.reviews__title {
+  margin: 0 auto 145px;
+
+  &-text {
+    font: 400 0.76em $primary-font-family;
+    color: $primary-black-color;
+    text-transform: capitalize;
+    margin-bottom: 32px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 25px;
+      border-top: 5px dotted $primary-hover-color;
+      margin: 0 auto 25px;
+    }
+  }
+}
+
+// Batton
+
+.reviews__btn {
+  margin-bottom: 90px;
+
+  &-item {
+    border-style: none;
+    width: 16px;
+    height: 16px;
+    background-color: $color-grey;
+    border-radius: 50%;
+    transition: $primary-hover-transition;
+
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+
+    &:hover,
+    &:focus {
+      border: none;
+      border-radius: 0%;
+      background: url(../images/reviews/home.png) no-repeat center;
+      outline: none;
+      transition: $primary-hover-transition;
+    }
+  }
+}
