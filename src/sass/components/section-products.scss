@@ -2,11 +2,28 @@
   width: 320px;
   padding-top: 124px;
   margin: 0 auto;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 688px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 1046px;
+  }
 }
 
 .products-menu {
   width: 246px;
   margin: 0 auto 127px;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 218px;
+    margin: 0 0 118px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 330px;
+  }
 }
 
 .products__first-title {
@@ -18,12 +35,20 @@
   margin-bottom: 130px;
   font-family: $secondary-font-family;
   font-weight: 400;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 26px;
+  }
 }
 
 .products__second-title {
   font-size: 36px;
   color: $primary-hover-color;
   margin-bottom: 66px;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 51px;
+  }
 }
 
 .products-menu__wrapper {
@@ -53,10 +78,18 @@
 
 .image-coffee {
   transform: translate(40px, -104px);
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    transform: translate(25px, -100px);
+  }
 }
 
 .image-milkshake {
   transform: translate(42px, -110px);
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    transform: translate(27px, -111px);
+  }
 }
 
 .products-menu__title {
@@ -72,6 +105,18 @@
     display: block;
     font-size: 20px;
     margin: 13px auto 30px;
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      font-size: 30px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 21px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 25px;
   }
 }
 
@@ -83,6 +128,15 @@
   font-size: 13px;
   font-family: $primary-font-family;
   font-weight: 700;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: 14px;
+    padding: 0 22px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .wrapper-button {
@@ -102,5 +156,12 @@
     width: 12px;
     height: 12px;
     fill: $primary-hover-color;
+  }
+}
+
+.products-menu__items {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
   }
 }
