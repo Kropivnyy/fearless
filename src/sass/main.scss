@@ -1,15 +1,14 @@
-@import 'helpers/variables.scss';
-@import 'helpers/hidden.scss';
-@import 'helpers/mixins.scss';
-@import 'helpers/placeholders.scss';
-@import 'normalize.scss';
-@import 'fonts.scss';
-@import 'base.scss';
+@import './helpers/variables.scss';
+@import './helpers/hidden.scss';
+@import './helpers/mixins.scss';
+@import './helpers/placeholders.scss';
+@import './normalize.scss';
+@import './fonts.scss';
+@import './base.scss';
 
-// Components
-
+/* Components */
+@import './components/section-products.scss';
 @import './components/reviews.scss';
 
-// Media
-
+/* Media */
 @import './media/reviews.scss';
