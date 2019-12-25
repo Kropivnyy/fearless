@@ -7,8 +7,12 @@
 @import './base.scss';
 
 /* Components */
+@import './components/location.scss';
+@import './components/footer.scss';
 @import './components/section-products.scss';
 @import './components/reviews.scss';
 
 /* Media */
 @import './media/reviews.scss';
+@import 'components/media.scss';
+

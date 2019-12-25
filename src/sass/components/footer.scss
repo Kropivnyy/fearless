@@ -1,0 +1,98 @@
+.footer-container {
+  width: 320px;
+  padding: 120px 40px 0;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: $color-lavender-pink;
+}
+
+.footer__title {
+  margin: 0 auto;
+  font-family: $secondary-font-family;
+  text-transform: uppercase;
+  text-align: left;
+  &--pink {
+    font-size: 18px;
+    color: $primary-pink-color;
+    line-height: 20px;
+  }
+  &--crimson {
+    margin-top: 30px;
+    font-size: 36px;
+    color: $primary-hover-color;
+    line-height: 32px;
+  }
+}
+
+.footer__social {
+  margin: 48px 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 156px;
+}
+
+.footer__social a {
+  display: block;
+}
+
+.footer__icons {
+  border-radius: 50%;
+  background-color: $primary-pink-color;
+  width: 33px;
+  height: 33px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color $primary-hover-transition;
+  &:hover {
+    background-color: $color-light-crimson;
+  }
+  &--github {
+    background-image: url(../images/icons/github.svg);
+  }
+  &--telegram {
+    background-image: url(../images/icons/telegram.svg);
+  }
+  &--facebook {
+    background-image: url(../images/icons/facebook.svg);
+  }
+}
+
+.footer__text {
+  margin-top: 50px;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: $primary-font-family;
+  color: $primary-black-color;
+  line-height: $primary-font-height;
+  text-align: center;
+  &--color {
+    color: $primary-hover-color;
+  }
+}
+
+.footer-bootom {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  &--border {
+    border-top: 2px solid;
+    border-color: rgba(0, 0, 0, 0.078);
+    padding: 26px 0;
+  }
+  &__text {
+    font-size: 13px;
+    font-family: $primary-font-family;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    color: $primary-grey-color;
+    line-height: 19px;
+  }
+}
