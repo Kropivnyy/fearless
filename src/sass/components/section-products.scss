@@ -1,3 +1,12 @@
+.products-wrapper {
+  @media (min-width: 1280px) {
+    background-image: url(../images/section-products/sectionbg3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
 .products {
   width: 320px;
   padding-top: 124px;
@@ -39,6 +48,10 @@
   @media (min-width: 768px) and (max-width: 1279px) {
     font-size: 26px;
   }
+
+  @media (min-width: 1280px) {
+    font-size: 30px;
+  }
 }
 
 .products__second-title {
@@ -48,6 +61,10 @@
 
   @media (min-width: 768px) and (max-width: 1279px) {
     font-size: 51px;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 60px;
   }
 }
 
@@ -74,6 +91,10 @@
 
 .image-cream {
   transform: translateY(-80px);
+
+  @media (min-width: 1280px) {
+    transform: translate(47px, -104px);
+  }
 }
 
 .image-coffee {
@@ -82,6 +103,10 @@
   @media (min-width: 768px) and (max-width: 1279px) {
     transform: translate(25px, -100px);
   }
+
+  @media (min-width: 1280px) {
+    transform: translate(85px, -118px);
+  }
 }
 
 .image-milkshake {
@@ -89,6 +114,10 @@
 
   @media (min-width: 768px) and (max-width: 1279px) {
     transform: translate(27px, -111px);
+  }
+
+  @media (min-width: 1280px) {
+    transform: translate(86px, -129px);
   }
 }
 
@@ -136,6 +165,7 @@
 
   @media (min-width: 1280px) {
     font-size: 16px;
+    padding: 0 52px;
   }
 }
 
@@ -151,11 +181,31 @@
   border: 0;
   border-radius: 50%;
   cursor: pointer;
+  transition: $primary-hover-transition;
+
+  @media (min-width: 1280px) {
+    width: 60px;
+    height: 60px;
+  }
 
   & svg {
     width: 12px;
     height: 12px;
     fill: $primary-hover-color;
+    transition: $primary-hover-transition;
+
+    @media (min-width: 1280px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &:hover {
+    background-color: $primary-hover-color;
+  }
+
+  &:hover svg {
+    fill: $primary-white-color;
   }
 }
 
