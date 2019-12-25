@@ -1,11 +1,11 @@
-.footer-container {
-  width: 320px;
-  padding: 120px 40px 0;
+.container {
+  width: 250px;
   margin: 0 auto;
 }
 
 .footer {
   background-color: $color-lavender-pink;
+  padding-top: 120px;
 }
 
 .footer__title {
@@ -43,7 +43,6 @@
   background-color: $primary-pink-color;
   width: 33px;
   height: 33px;
-  background-size: 24px 24px;
   background-repeat: no-repeat;
   background-position: center;
   transition: background-color $primary-hover-transition;
@@ -51,19 +50,22 @@
     background-color: $color-light-crimson;
   }
   &--github {
+    background-size: 21px 21px;
     background-image: url(../images/icons/github.svg);
   }
   &--telegram {
+    background-size: 19px 19px;
     background-image: url(../images/icons/telegram.svg);
   }
   &--facebook {
+    background-size: 21px 21px;
     background-image: url(../images/icons/facebook.svg);
   }
 }
 
 .footer__text {
   margin-top: 50px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   font-style: normal;
   font-family: $primary-font-family;

@@ -1,8 +1,6 @@
 @media (min-width: 768px) {
-  .locations-container {
-    min-width: 768px;
-    padding: 0 40px;
-    margin: 0 auto;
+  .container {
+    width: 690px;
   }
 
   .locations {
@@ -11,7 +9,7 @@
   }
 
   .location-card {
-    width: 224px;
+    width: 222px;
     margin: 20px 0 0;
     padding: 50px 32px;
   }
@@ -41,8 +39,7 @@
     }
   }
 
-  .footer-container {
-    width: 100%;
+  .footer--media {
     display: flex;
     justify-content: space-between;
   }
@@ -76,12 +73,11 @@
 }
 
 @media (min-width: 1280px) {
-  .locations-container {
-    min-width: 1280px;
-    padding: 0 112px;
+  .container {
+    width: 1056px;
   }
 
-  .locations {
+  .locations--background-image {
     background-image: url(../images/sectionbg2.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -89,13 +85,13 @@
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2) {
-    .locations {
+    .locations--background-image {
       background-image: url(../images/sectionbg2@2.png);
     }
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 3) {
-    .locations {
+    .locations--background-image {
       background-image: url(../images/sectionbg2@3.png);
     }
   }
@@ -112,6 +108,13 @@
     font-size: $primary-font-size;
     width: 100%;
     line-height: 28px;
+  }
+
+  .location-card-buttons {
+    width: 100%;
+    margin: 78px auto;
+    display: inline-block;
+    text-align: center;
   }
 
   .location-card__title {
