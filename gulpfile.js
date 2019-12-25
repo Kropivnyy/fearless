@@ -25,7 +25,7 @@ const watcher = done => {
     'change',
     series(tasks.html, tasks.inject, browserSync.reload),
   );
-  watch(paths.watch.css).on('change', series(tasks.css, browserSync.reload));
+  watch(paths.watch.css).on('change', function(){setTimeout( series(tasks.css, browserSync.reload), 100)});
   watch(paths.watch.js).on('change', series(tasks.scripts, browserSync.reload));
   watch(paths.watch.images, tasks.images);
   watch(paths.watch.fonts, tasks.fonts);
