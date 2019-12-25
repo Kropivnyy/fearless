@@ -1,12 +1,18 @@
-@import 'helpers/variables';
-@import 'helpers/hidden';
-@import 'helpers/mixins';
-@import 'helpers/placeholders';
-@import 'normalize';
-@import 'fonts';
-@import 'base';
+@import './helpers/variables.scss';
+@import './helpers/hidden.scss';
+@import './helpers/mixins.scss';
+@import './helpers/placeholders.scss';
+@import './normalize.scss';
+@import './fonts.scss';
+@import './base.scss';
 
 /* Components */
-@import 'components/location';
-@import 'components/footer';
-@import 'components/media';
+@import './components/location.scss';
+@import './components/footer.scss';
+@import './components/section-products.scss';
+@import './components/reviews.scss';
+
+/* Media */
+@import './media/reviews.scss';
+@import 'components/media.scss';
+

@@ -8,15 +8,18 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  font-family: $primary-font-family;
-  color: $primary-black-color;
-  font-size: $primary-font-size;
-  line-height: $primary-font-height;
-}
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.sprite {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
 }
