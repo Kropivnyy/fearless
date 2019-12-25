@@ -66,6 +66,11 @@
     &::after {
         content: "\003E";
         vertical-align: middle;
-        padding-left: 15px;
+        padding-left: 20px;
     }
+}
+
+.made__steps-item--icon {
+    height: 50px;
+    width: 50px;
 }
