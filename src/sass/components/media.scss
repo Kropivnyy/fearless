@@ -1,7 +1,6 @@
 @media (min-width: 768px) {
-  .locations,
-  .footer--media {
-    padding: 0 39px;
+  .locations {
+    width: 690px;
     display: flex;
     justify-content: space-between;
   }
@@ -42,6 +41,7 @@
   }
 
   .footer--media {
+    width: 690px;
     display: flex;
     justify-content: space-between;
   }
@@ -76,8 +76,8 @@
 
 @media (min-width: 1280px) {
   .locations,
-  .location-card-buttons {
-    padding: 0 112px;
+  .footer--media {
+    width: 1056px;
   }
 
   .locations--background {
