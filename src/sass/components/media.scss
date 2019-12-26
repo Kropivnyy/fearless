@@ -78,7 +78,7 @@
   }
 
   .locations {
-    background-image: url(../images/sectionbg2.png);
+    background-image: url(../images/location/sectionbg2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -86,13 +86,13 @@
 
   @media screen and (-webkit-min-device-pixel-ratio: 2) {
     .locations {
-      background-image: url(../images/sectionbg2@2.png);
+      background-image: url(../images/location/sectionbg2@2.png);
     }
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 3) {
     .locations {
-      background-image: url(../images/sectionbg2@3.png);
+      background-image: url(../images/location/sectionbg2@3.png);
     }
   }
 
