@@ -1,9 +1,16 @@
 <section class="container">
   <div class="collage">
     <picture>
-      <source srcset="./images/reviews/collage@2x.png" />
+      <source
+        srcset="./images/reviews/collage@3x.png"
+        media="(max-width: 768px)"
+      />
+      <source
+        srcset="./images/reviews/collage@2x.png"
+        media="(max-width: 1280px)"
+      />
       <img
-        src="/src/images/reviews/collage.png"
+        src="./images/reviews/collage@1x.png"
         class="collage__img"
         alt="collage ice cream"
       />
@@ -55,7 +62,7 @@
       </div>
     </div> -->
 
-    <!-- two "div for slider" -->
+    <!-- two "div" for slider -->
 
     <div class="reviews__btn">
       <button type="button" class="reviews__btn-item"></button>
