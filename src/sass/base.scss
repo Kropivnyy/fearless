@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-family: $primary-font-family;
+  font-size: $primary-font-size;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -19,7 +24,14 @@ img {
 }
 
 .container {
-  width: 100%;
-  min-width: 320px;
+  width: 320px;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280) {
+    width: 1280px;
+  }
 }

@@ -1,9 +1,6 @@
 .products-wrapper {
   @media (min-width: 1280px) {
-    background-image: url(../images/section-products/sectionbg3.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background: url(../images/section-products/sectionbg3.jpg) no-repeat center/contain;
   }
 }
 
@@ -181,7 +178,7 @@
   border: 0;
   border-radius: 50%;
   cursor: pointer;
-  transition: $primary-hover-transition;
+  transition: all $primary-hover-transition;
 
   @media (min-width: 1280px) {
     width: 60px;
@@ -192,7 +189,7 @@
     width: 12px;
     height: 12px;
     fill: $primary-hover-color;
-    transition: $primary-hover-transition;
+    transition: all $primary-hover-transition;
 
     @media (min-width: 1280px) {
       width: 20px;
@@ -201,11 +198,7 @@
   }
 
   &:hover {
-    background-color: $primary-hover-color;
-  }
-
-  &:hover svg {
-    fill: $primary-white-color;
+    background-color: $color-smoky-white;
   }
 }
 

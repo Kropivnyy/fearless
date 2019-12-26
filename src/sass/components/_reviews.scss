@@ -2,12 +2,14 @@
 
 .collage {
   margin-bottom: 195px;
+  position: relative;
 
   &__img {
-    display: block;
     width: 80%;
-    object-fit: cover;
-    margin: 0 auto;
+    position: absolute;
+    top: -380px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -15,6 +17,7 @@
 
 .reviews {
   text-align: center;
+  padding-top: 225px;
 
   &__blog {
     width: 78.125%;
@@ -55,12 +58,12 @@
 
   &__card-two::before {
     @extend %reviews-pseudo-element;
-    background: url(../images/reviews/testimonials2.jpg) no-repeat;
+    background: url(../images/reviews/testimonials2.jpg);
   }
 
   &__card-three::before {
     @extend %reviews-pseudo-element;
-    background: url(../images/reviews/testimonials3.jpg) no-repeat;
+    background: url(../images/reviews/testimonials3.jpg);
   }
 }
 

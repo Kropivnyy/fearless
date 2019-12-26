@@ -12,6 +12,7 @@
   margin: 0 auto;
   width: 255px;
   font-family: $secondary-font-family;
+  width: 255px;
   text-transform: uppercase;
   text-align: left;
   &--pink {
@@ -35,11 +36,8 @@
   width: 156px;
 }
 
-.footer__social a {
-  display: block;
-}
-
 .footer__icons {
+  @extend %link;
   border-radius: 50%;
   background-color: $primary-pink-color;
   width: 33px;

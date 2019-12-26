@@ -20,19 +20,22 @@
   width: 230px;
   margin: 0 auto;
   padding: 118px 0 152px;
-  background-image: url(/src/images/how-its-made/milk.png);
+  background: url(../images/how-its-made/milk.png) no-repeat padding-box;
   background-size: contain;
-  background-repeat: no-repeat;
   background-position-y: 750px;
 
   @media (min-width: 768px) and (max-width: 1279px) {
-    width: 688px;
-    background-position-y: 450px;
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-position-y: 400px;
   }
 
   @media (min-width: 1280px) {
-    width: 1046px;
-    background-position-y: 400px;
+    width: 1280px;
+    padding-left: 118px;
+    padding-right: 118px;
+    background-position-y: 320px;
   }
 }
 
