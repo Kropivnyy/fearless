@@ -1,9 +1,6 @@
 @media (min-width: 768px) {
-  .container {
-    width: 690px;
-  }
-
   .locations {
+    width: 690px;
     display: flex;
     justify-content: space-between;
   }
@@ -44,6 +41,7 @@
   }
 
   .footer--media {
+    width: 690px;
     display: flex;
     justify-content: space-between;
   }
@@ -77,11 +75,13 @@
 }
 
 @media (min-width: 1280px) {
-  .container {
+  .locations,
+  .footer--media {
     width: 1056px;
   }
 
-  .locations {
+  .locations--background {
+    margin: 0 -35px;
     background-image: url(../images/location/sectionbg2.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -89,13 +89,13 @@
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2) {
-    .locations {
+    .locations--background {
       background-image: url(../images/location/sectionbg2@2.png);
     }
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 3) {
-    .locations {
+    .locations--background {
       background-image: url(../images/location/sectionbg2@3.png);
     }
   }
