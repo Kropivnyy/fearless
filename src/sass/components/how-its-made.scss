@@ -1,0 +1,112 @@
+.made {
+    font-family: $primary-font-family;
+    color: $primary-grey-color;
+    background-color: $color-lavender-pink;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.made__wrapper {
+    width: 230px;
+    margin: 0 auto;
+    padding: 118px 0 152px;
+    background-image: url(/src/images/how-its-made/milk.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 750px;
+}
+
+.made__title {
+    font-family: $secondary-font-family;
+    color: $primary-pink-color;
+    font-size: 18px;
+    line-height: 38px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.made__title--red-part {
+    display: block;
+    font-size: 36px;
+    color: $primary-hover-color;
+}
+
+.made__article--main-image {
+    margin: 100px 0 97px 0;
+}
+
+.made__article--text {
+    margin: 0;
+    padding: 0;
+    width: 224px;
+    display: block;
+    margin: 0 auto;
+    padding-left: 16px;
+}
+
+.made__article--annotation {
+    color: $primary-black-color;
+    padding-bottom: 30px;
+}
+
+.made__article--short-part {
+    padding: 14px 0 37px 0;
+}
+
+.made__article--read-more {
+    font-size: 14px;
+    color: $primary-hover-color;
+    font-weight: bold;
+    width: 158px;
+    height: 41px;
+    border-radius: 21px;
+    background-color: $primary-white-color;
+    text-align: center;
+    border: none;
+    margin-bottom: 40px;
+    cursor: pointer;
+
+    &::after {
+        content: "\003E";
+        vertical-align: middle;
+        padding-left: 20px;
+    }
+}
+
+.made__steps {
+    list-style: none;
+}
+    
+.made__steps-item:nth-child(-n+2) {
+        margin-bottom: 37px;
+}
+
+.made__steps-item--icon {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}
+
+.icon1 {
+    width: 33px;;
+}
+
+.icon2 {
+    width: 50px;;
+}
+
+.icon3 {
+    width: 44px;;
+}
+
+.made__steps-item--title {
+    font-family: $secondary-font-family;
+    color: $primary-hover-color;
+    font-size: 36px;
+    line-height: 52px;
+}
+
+.made__steps-item--text {
+    color: $primary-black-color;
+    font-weight: bold;
+}
