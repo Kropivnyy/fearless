@@ -10,6 +10,7 @@
 
 .footer__title {
   margin: 0 auto;
+  width: 255px;
   font-family: $secondary-font-family;
   width: 255px;
   text-transform: uppercase;
@@ -28,7 +29,7 @@
 }
 
 .footer__social {
-  margin: 48px 0 0 auto;
+  margin: 48px 40px 0 auto;
   display: flex;
   justify-content: space-between;
   align-content: center;
