@@ -1,12 +1,16 @@
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .reviews__blog-box-text,
   .reviews__title-text {
     font-size: 1em;
+  }
+
+  .collage__img {
+    top: -345px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .collage__img {
+    top: -425px;
   }
 }
