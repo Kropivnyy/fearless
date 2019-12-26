@@ -7,11 +7,13 @@
 @import './base.scss';
 
 /* Components */
-@import './components/location.scss';
-@import './components/footer.scss';
+@import './components/navigation.scss';
+@import './components/header.scss';
 @import './components/section-products.scss';
 @import './components/how-its-made.scss';
 @import './components/reviews.scss';
+@import './components/location.scss';
+@import './components/footer.scss';
 
 /* Media */
 @import './media/reviews.scss';

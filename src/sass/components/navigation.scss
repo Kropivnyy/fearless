@@ -1,0 +1,104 @@
+.navigation {
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  right: 0;
+  z-index: 1000;
+
+  &__toggle {
+    display: none;
+  }
+
+  &__burger {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 22px;
+    right: 16px;
+    width: 22px;
+    height: 15px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+}
+
+.navigation__burger-line,
+.navigation__burger-line::before,
+.navigation__burger-line::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: $primary-hover-color;
+  transition: all $primary-hover-transition;
+}
+.navigation__burger-line::before {
+  content: '';
+  top: -5px;
+}
+.navigation__burger-line::after {
+  content: '';
+  top: 5px;
+}
+
+.navigation__list {
+  @extend %list;
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100%;
+  padding: 61px 0;
+  background-color: $color-pink-menu;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  transition: all $primary-hover-transition;
+}
+
+.navigation__item {
+  @extend %link;
+  padding-left: 20px;
+  color: $primary-white-color;
+  font-family: $primary-font-family;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 3;
+  border-top: 1px solid #ebeaea14;
+  transition: all $primary-hover-transition;
+  &:last-child {
+    border-bottom: 1px solid #ebeaea14;
+  }
+  &:hover {
+    color: $primary-hover-color;
+  }
+}
+
+.navigation__toggle:checked ~ .navigation__burger > .navigation__burger-line {
+  transform: rotate(45deg);
+  background-color: $primary-white-color;
+  &::before {
+    top: 0;
+    transform: rotate(0);
+    background-color: $primary-white-color;
+  }
+  &::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: $primary-white-color;
+  }
+}
+.navigation__toggle:checked ~ .navigation__list {
+  visibility: visible;
+  right: 0;
+}
+
+// .overlay {
+//   background-color: #00000066;
+//   position: fixed;
+//   left: 0;
+//   top: 0;
+//   height: 100%;
+//   width: 100%;
+// }
+

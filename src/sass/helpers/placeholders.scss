@@ -1,3 +1,29 @@
+%list {
+  list-style: none;
+}
+
+%link {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+
+%title {
+  font-family: $secondary-font-family;
+  text-transform: uppercase;
+  text-align: center;
+  color: $primary-hover-color;
+  font-size: 36px;
+  line-height: 52px;
+}
+
+%subtitle {
+  display: block;
+  font-size: 18px;
+  line-height: 38px;
+  color: $primary-pink-color;
+}
+
 %reviews-pseudo-element {
   content: '';
   display: block;
