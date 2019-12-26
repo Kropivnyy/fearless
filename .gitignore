@@ -11,6 +11,9 @@ yarn-error.log*
 # build artifacts
 build/
 
+# gulpfile
+gulpfile.js
+
 # Runtime data
 pids
 *.pid
