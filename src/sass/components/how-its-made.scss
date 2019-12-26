@@ -13,6 +13,7 @@
     background-image: url(/src/images/how-its-made/milk.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position-y: 750px;
 }
 
 .made__title {
@@ -62,6 +63,8 @@
     background-color: $primary-white-color;
     text-align: center;
     border: none;
+    margin-bottom: 40px;
+    cursor: pointer;
 
     &::after {
         content: "\003E";
@@ -70,7 +73,40 @@
     }
 }
 
+.made__steps {
+    list-style: none;
+}
+    
+.made__steps-item:nth-child(-n+2) {
+        margin-bottom: 37px;
+}
+
 .made__steps-item--icon {
+    margin: 0;
+    padding: 0;
     height: 50px;
-    width: 50px;
+}
+
+.icon1 {
+    width: 33px;;
+}
+
+.icon2 {
+    width: 50px;;
+}
+
+.icon3 {
+    width: 44px;;
+}
+
+.made__steps-item--title {
+    font-family: $secondary-font-family;
+    color: $primary-hover-color;
+    font-size: 36px;
+    line-height: 52px;
+}
+
+.made__steps-item--text {
+    color: $primary-black-color;
+    font-weight: bold;
 }
