@@ -5,7 +5,8 @@
   }
 
   .collage__img {
-    top: -245px;
+    top: -265px;
+    width: 100%;
   }
 
   .reviews {
@@ -14,10 +15,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .collage__img {
-    top: -325px;
-  }
-
   .reviews {
     padding-top: 310px;
   }
