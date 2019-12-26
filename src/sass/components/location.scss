@@ -1,9 +1,10 @@
-.container {
+.locations {
   width: 250px;
   margin: 0 auto;
 }
 
-.locations--background {
+.locations-section {
+  padding: 0 35px;
   background-image: linear-gradient(
     to bottom,
     $primary-white-color 100px,
