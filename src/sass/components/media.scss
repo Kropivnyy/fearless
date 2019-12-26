@@ -1,9 +1,11 @@
 @media (min-width: 768px) {
   .container {
-    width: 690px;
+    width: 768px;
   }
 
-  .locations {
+  .locations,
+  .footer--media {
+    padding: 0 39px;
     display: flex;
     justify-content: space-between;
   }
@@ -78,10 +80,16 @@
 
 @media (min-width: 1280px) {
   .container {
-    width: 1056px;
+    width: 1280px;
   }
 
-  .locations--background-image {
+  .locations,
+  .location-card-buttons {
+    padding: 0 112px;
+  }
+
+  .locations--background {
+    margin: 0 -35px;
     background-image: url(../images/location/sectionbg2.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -89,13 +97,13 @@
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2) {
-    .locations--background-image {
+    .locations--background {
       background-image: url(../images/location/sectionbg2@2.png);
     }
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 3) {
-    .locations--background-image {
+    .locations--background {
       background-image: url(../images/location/sectionbg2@3.png);
     }
   }
