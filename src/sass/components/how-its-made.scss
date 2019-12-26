@@ -1,41 +1,41 @@
 .made {
   font-family: $primary-font-family;
   color: $primary-grey-color;
-  background-color: $color-lavender-pink;
   font-size: 13px;
   line-height: 20px;
+  background: url(../images/how-its-made/milk.png) no-repeat padding-box;
+  background-size: contain;
+  background-position-y: 590px;
+  background-color: $color-lavender-pink;
 
   @media (min-width: 768px) and (max-width: 1279px) {
     font-size: 14px;
     line-height: 25px;
+    background-position-y: 400px;
   }
 
   @media (min-width: 1280px) {
     font-size: 16px;
     line-height: 28px;
+    background-position-y: 320px;
   }
 }
 
 .made__wrapper {
-  width: 230px;
+  width: 320px;
   margin: 0 auto;
-  padding: 118px 0 152px;
-  background: url(../images/how-its-made/milk.png) no-repeat padding-box;
-  background-size: contain;
-  background-position-y: 750px;
+  padding: 118px 0 152px 0;
 
   @media (min-width: 768px) and (max-width: 1279px) {
     width: 768px;
     padding-left: 30px;
     padding-right: 30px;
-    background-position-y: 400px;
   }
 
   @media (min-width: 1280px) {
     width: 1280px;
     padding-left: 118px;
     padding-right: 118px;
-    background-position-y: 320px;
   }
 }
 
@@ -46,6 +46,7 @@
   line-height: 38px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 60px;
 
   @media (min-width: 768px) and (max-width: 1279px) {
     font-size: 26px;
@@ -155,6 +156,7 @@
 
 .made__steps {
   @extend %list;
+  padding-left: 30px;
 
   @media (min-width: 768px) {
     display: flex;
