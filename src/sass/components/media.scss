@@ -21,7 +21,7 @@
 
   .location-card-buttons {
     width: 100%;
-    margin: 78px auto;
+    margin: 80px auto;
     display: inline-block;
     text-align: center;
   }
@@ -37,6 +37,10 @@
       width: 177px;
       height: 50px;
     }
+  }
+
+  .footer {
+    padding-top: 160px;
   }
 
   .footer--media {
@@ -108,13 +112,6 @@
     font-size: $primary-font-size;
     width: 100%;
     line-height: 28px;
-  }
-
-  .location-card-buttons {
-    width: 100%;
-    margin: 78px auto;
-    display: inline-block;
-    text-align: center;
   }
 
   .location-card__title {
