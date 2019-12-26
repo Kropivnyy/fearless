@@ -1,13 +1,13 @@
 // Collage
 
 .collage {
-  margin-bottom: 195px;
+  margin-bottom: 95px;
   position: relative;
 
   &__img {
-    width: 80%;
+    width: 100%;
     position: absolute;
-    top: -380px;
+    top: -150px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -17,7 +17,7 @@
 
 .reviews {
   text-align: center;
-  padding-top: 225px;
+  padding-top: 115px;
 
   &__blog {
     width: 78.125%;

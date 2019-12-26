@@ -1,12 +1,24 @@
-// @media screen and (min-width: 1200px) {
-//   .container {
-//     max-width: 1200px;
-//   }
-// }
-
 @media screen and (min-width: 768px) {
   .reviews__blog-box-text,
   .reviews__title-text {
     font-size: 1em;
+  }
+
+  .collage__img {
+    top: -245px;
+  }
+
+  .reviews {
+    padding-top: 310px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .collage__img {
+    top: -325px;
+  }
+
+  .reviews {
+    padding-top: 310px;
   }
 }
