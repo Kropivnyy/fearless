@@ -16,14 +16,10 @@
     margin: 0 -35px;
     background: url(../images/location/sectionbg2.png) no-repeat center/contain;
     @media screen and (-webkit-min-device-pixel-ratio: 2) {
-      .locations--background {
-        background-image: url(../images/location/sectionbg2@2x.png);
-      }
+      background-image: url(../images/location/sectionbg2@2x.png);
     }
     @media screen and (-webkit-min-device-pixel-ratio: 3) {
-      .locations--background {
-        background-image: url(../images/location/sectionbg2@3x.png);
-      }
+      background-image: url(../images/location/sectionbg2@3x.png);
     }
   }
 }

@@ -67,6 +67,13 @@
           background: url(../images/reviews/blockquote.png) no-repeat center;
           position: absolute;
           left: -55px;
+          @media screen and (-webkit-min-device-pixel-ratio: 2) {
+            background: url(../images/reviews/blockquote@2x.png) no-repeat
+              center;
+          }
+          @media screen and (-webkit-min-device-pixel-ratio: 3) {
+            background: url(../reviews/blockquote@3x.png) no-repeat center;
+          }
         }
       }
     }
@@ -74,17 +81,35 @@
 
   &__card-one::before {
     @extend %reviews-pseudo-element;
-    background: url(../images/reviews/testimonials1.jpg);
+    background: url(../images/reviews/testimonials1.png);
+    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+      background: url(../images/reviews/testimonials1@2x.png);
+    }
+    @media screen and (-webkit-min-device-pixel-ratio: 3) {
+      background: url(../images/reviews/testimonials1@3x.png);
+    }
   }
 
   &__card-two::before {
     @extend %reviews-pseudo-element;
-    background: url(../images/reviews/testimonials2.jpg);
+    background: url(../images/reviews/testimonials2.png);
+    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+      background: url(../images/reviews/testimonials2@2x.png);
+    }
+    @media screen and (-webkit-min-device-pixel-ratio: 3) {
+      background: url(../images/reviews/testimonials2@3x.png);
+    }
   }
 
   &__card-three::before {
     @extend %reviews-pseudo-element;
-    background: url(../images/reviews/testimonials3.jpg);
+    background: url(../images/reviews/testimonials3.png);
+    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+      background: url(../images/reviews/testimonials32@2x.png);
+    }
+    @media screen and (-webkit-min-device-pixel-ratio: 3) {
+      background: url(../images/reviews/testimonials3@3x.png);
+    }
   }
 }
 

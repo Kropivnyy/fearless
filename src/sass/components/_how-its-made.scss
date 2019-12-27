@@ -8,6 +8,12 @@
   background-size: contain;
   background-position-y: 650px;
   background-color: $color-lavender-pink;
+  @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    background-image: url(../images/how-its-made/milk@2x.png) no-repeat padding-box;
+    }
+  @media screen and (-webkit-min-device-pixel-ratio: 3) {
+    background-image: url(../images/how-its-made/milk@3x.png) no-repeat padding-box;
+    }
 
   @media (min-width: 768px) {
     font-size: 14px;
