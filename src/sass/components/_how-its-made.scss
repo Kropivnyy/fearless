@@ -6,19 +6,19 @@
   line-height: 20px;
   background: url(../images/how-its-made/milk.png) no-repeat padding-box;
   background-size: contain;
-  background-position-y: 590px;
+  background-position-y: 650px;
   background-color: $color-lavender-pink;
 
   @media (min-width: 768px) {
     font-size: 14px;
     line-height: 25px;
-    background-position-y: 400px;
+    background-position-y: 360px;
   }
 
   @media (min-width: 1280px) {
     font-size: 16px;
     line-height: 28px;
-    background-position-y: 320px;
+    background-position-y: 280px;
   }
 }
 
