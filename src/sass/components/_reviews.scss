@@ -1,15 +1,27 @@
 // Collage
 
 .collage {
-  margin-bottom: 95px;
+  padding-top: 148px;
   position: relative;
+  @media screen and (min-width: 768px) {
+    padding-top: 280px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 380px;
+  }
 
   &__img {
     width: 80%;
     position: absolute;
-    top: -150px;
+    top: -45px;
     left: 50%;
     transform: translateX(-50%);
+    @media screen and (min-width: 768px) {
+      top: -103px;
+    }
+    @media screen and (min-width: 768px) {
+      top: -174px;
+    }
   }
 }
 
@@ -26,17 +38,26 @@
     position: relative;
 
     &-box {
-      width: 43.75%;
+      width: 56%;
       margin: 0 auto;
       padding: 52px 0 33px;
+      @media screen and (min-width: 768px) {
+        width: 82.78%;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 88.56%;
+      }
 
       &-text {
-        font: 500 0.76em $primary-font-family;
+        font: 500 13px $primary-font-family;
         color: $primary-black-color;
-        line-height: 2.385;
+        line-height: 31px;
         border-bottom: 1px solid $color-grey;
         padding: 10px 0;
         position: relative;
+        @media screen and (min-width: 768px) {
+          font-size: 15px;
+        }
 
         &::before {
           content: '';
@@ -70,13 +91,16 @@
 // Reviews title
 
 .reviews__title {
-  margin: 0 auto 145px;
+  margin: 0 auto 34px;
 
   &-text {
     font: 400 0.76em $primary-font-family;
     color: $primary-black-color;
     text-transform: capitalize;
     margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      font-size: 1em;
+    }
 
     &::before {
       content: '';
@@ -91,7 +115,10 @@
 // Batton
 
 .reviews__btn {
-  margin-bottom: 90px;
+  padding-bottom: 90px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 120px;
+  }
 
   &-item {
     border-style: none;

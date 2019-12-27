@@ -1,11 +1,22 @@
 .footer--media {
   width: 250px;
   margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 690px;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1056px;
+  }
 }
 
 .footer {
   background-color: $color-lavender-pink;
   padding-top: 120px;
+  @media screen and (min-width: 768px) {
+    padding-top: 160px;
+  }
 }
 
 .footer__title {
@@ -15,16 +26,38 @@
   width: 255px;
   text-transform: uppercase;
   text-align: left;
+  @media screen and (min-width: 768px) {
+    width: 320px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 500px;
+  }
   &--pink {
     font-size: 18px;
     color: $primary-pink-color;
     line-height: 20px;
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 33px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+      line-height: 38px;
+    }
   }
   &--crimson {
     margin-top: 30px;
     font-size: 36px;
     color: $primary-hover-color;
     line-height: 32px;
+    @media screen and (min-width: 768px) {
+      font-size: 51px;
+      line-height: 49px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 60px;
+      line-height: 52px;
+    }
   }
 }
 
@@ -34,6 +67,17 @@
   justify-content: space-between;
   align-content: center;
   width: 156px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+.footer-social {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 
 .footer__icons {
@@ -74,14 +118,21 @@
   &--color {
     color: $primary-hover-color;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: $primary-font-size;
+  }
 }
 
-.footer-bootom {
+.footer-bottom {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
   &--border {
     border-top: 2px solid;
     border-color: rgba(0, 0, 0, 0.078);

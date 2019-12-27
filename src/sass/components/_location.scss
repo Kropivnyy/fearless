@@ -1,6 +1,31 @@
 .locations {
   width: 250px;
   margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 690px;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1056px;
+  }
+}
+
+.locations--background {
+  @media screen and (min-width: 1280px) {
+    margin: 0 -35px;
+    background: url(../images/location/sectionbg2.png) no-repeat center/contain;
+    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+      .locations--background {
+        background-image: url(../images/location/sectionbg2@2x.png);
+      }
+    }
+    @media screen and (-webkit-min-device-pixel-ratio: 3) {
+      .locations--background {
+        background-image: url(../images/location/sectionbg2@3x.png);
+      }
+    }
+  }
 }
 
 .locations-section {
@@ -20,6 +45,15 @@
   background-color: $primary-white-color;
   box-shadow: 0px 10px 40px 0px rgba(212, 20, 66, 0.15);
   width: 255px;
+  @media screen and (min-width: 768px) {
+    width: 222px;
+    margin: 20px 0 0;
+    padding: 50px 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 338px;
+    padding: 50px 52px;
+  }
 }
 
 .location-card__link {
@@ -36,6 +70,11 @@
   font-style: normal;
   font-size: 13px;
   width: 150px;
+  @media screen and (min-width: 1280px) {
+    font-size: $primary-font-size;
+    width: 100%;
+    line-height: 28px;
+  }
 }
 
 .location-card__title {
@@ -45,15 +84,26 @@
   text-transform: uppercase;
   border-radius: 5px;
   margin-bottom: 36px;
+  @media screen and (min-width: 1280px) {
+    line-height: 28px;
+  }
   &--maize {
     background-color: $products-maize-color;
     width: 62px;
-    height: 18px;
+    min-height: 18px;
+    @media screen and (min-width: 1280px) {
+      width: 73px;
+      min-height: 28px;
+    }
   }
   &--green {
     background: $products-green-color;
     width: 107px;
     height: 18px;
+    @media screen and (min-width: 1280px) {
+      width: 136px;
+      min-height: 28px;
+    }
   }
 }
 
@@ -88,6 +138,9 @@
   width: 178px;
   height: 1px;
   margin: 35px 0;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
 }
 
 .location-card-buttons {
@@ -97,6 +150,12 @@
   justify-content: center;
   align-content: center;
   background-color: $color-lavender-pink;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    margin: 80px auto;
+    display: inline-block;
+    text-align: center;
+  }
 }
 
 .location-card__button {
@@ -109,13 +168,21 @@
   font-size: 14px;
   line-height: 41px;
   width: 158px;
-  height: 41px;
+  min-height: 41px;
   border-radius: 25px;
   border-style: none;
+  @media screen and (min-width: 768px) {
+    line-height: 50px;
+  }
   &--locations {
     color: $primary-white-color;
     background-color: $primary-hover-color;
-    transition: background-color $primary-hover-transition;
+    transition: all $primary-hover-transition;
+    @media screen and (min-width: 768px) {
+      width: 199px;
+      min-height: 50px;
+      margin-right: 10px;
+    }
     &::after {
       content: '';
       display: inline-block;
@@ -131,7 +198,11 @@
   &--franchise {
     color: $primary-hover-color;
     background-color: $primary-white-color;
-    transition: background-color $primary-hover-transition;
+    transition: all $primary-hover-transition;
+    @media screen and (min-width: 768px) {
+      width: 177px;
+      min-height: 50px;
+    }
     &::after {
       content: '';
       display: inline-block;

@@ -1,4 +1,5 @@
 .made {
+  min-height: 1247px;
   font-family: $primary-font-family;
   color: $primary-grey-color;
   font-size: 13px;
@@ -8,7 +9,7 @@
   background-position-y: 590px;
   background-color: $color-lavender-pink;
 
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (min-width: 768px) {
     font-size: 14px;
     line-height: 25px;
     background-position-y: 400px;
@@ -22,20 +23,14 @@
 }
 
 .made__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding: 118px 0 152px 0;
+  padding: 128px 30px 152px;
 
-  @media (min-width: 768px) and (max-width: 1279px) {
-    width: 768px;
-    padding-left: 30px;
-    padding-right: 30px;
+  @media (min-width: 768px) {
+    padding-bottom: 242px;
   }
 
   @media (min-width: 1280px) {
-    width: 1280px;
-    background-position-y: 320px;
-    padding: 0 118px 315px;
+    padding: 128px 106px 315px;
   }
 }
 
@@ -46,16 +41,22 @@
   line-height: 38px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 60px;
+  margin: 0 auto 60px;
 
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (max-width: 767px) {
+    width: 200px;
+  }
+
+  @media (min-width: 768px) {
     font-size: 26px;
     line-height: 38px;
+    margin-bottom: 90px;
   }
 
   @media (min-width: 1280px) {
     font-size: 30px;
     line-height: 38px;
+    margin-bottom: 110px;
   }
 }
 
@@ -64,14 +65,13 @@
   font-size: 36px;
   color: $primary-hover-color;
 
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (min-width: 768px) {
     font-size: 51px;
-    padding: 27px 0 90px;
+    padding-top: 27px;
   }
 
   @media (min-width: 1280px) {
     font-size: 60px;
-    padding: 27px 0 110px;
   }
 }
 
@@ -87,8 +87,12 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (min-width: 768px) {
     width: 315px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 470px;
   }
 }
 
@@ -96,19 +100,18 @@
   margin: 0;
   padding: 0;
   width: 224px;
-  display: block;
   margin: 0 auto;
   padding-left: 16px;
   padding-top: 37px;
 
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (min-width: 768px) {
     width: 300px;
     padding-top: 0;
+    padding-left: 0;
   }
 
   @media (min-width: 1280px) {
     width: 460px;
-    padding-top: 0;
   }
 }
 
@@ -145,10 +148,6 @@
     padding-left: 20px;
   }
 
-  @media (min-width: 768px) and (max-width: 1279px) {
-    font-size: 14px;
-  }
-
   @media (min-width: 1280px) {
     font-size: 15px;
   }
@@ -156,9 +155,9 @@
 
 .made__steps {
   @extend %list;
-  padding-left: 30px;
 
   @media (min-width: 768px) {
+    padding-left: 0;
     display: flex;
     justify-content: flex-start;
   }
@@ -169,7 +168,7 @@
     margin-bottom: 37px;
   }
 
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (min-width: 768px) {
     flex-basis: 238px;
   }
 
@@ -202,7 +201,7 @@
   font-size: 36px;
   line-height: 52px;
 
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (min-width: 768px) {
     font-size: 51px;
     padding: 45px 0 25px;
   }
@@ -217,7 +216,7 @@
   color: $primary-black-color;
   font-weight: bold;
 
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (min-width: 768px) {
     width: 166px;
   }
 

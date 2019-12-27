@@ -9,7 +9,7 @@
   padding-top: 124px;
   margin: 0 auto;
 
-  @media (min-width: 768px) and (max-width: 1279px) {
+  @media (min-width: 768px) {
     width: 688px;
   }
 
@@ -22,7 +22,13 @@
   width: 246px;
   margin: 0 auto 127px;
 
-  @media (min-width: 768px) and (max-width: 1279px) {
+  &:last-of-type {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 97px;
+    }
+  }
+
+  @media (min-width: 768px) {
     width: 218px;
     margin: 0 0 118px;
   }
