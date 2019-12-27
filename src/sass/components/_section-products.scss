@@ -3,10 +3,10 @@
     background: url(../images/section-products/sectionbg3.jpg) no-repeat top
       left/cover;
     @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      background-image: url(../images/section-products/sectionbg3@2x.jpg);
+      background-image: url(../images/section-products/sectionbg3@2x.jpg) no-repeat top left/cover;
     }
     @media screen and (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
-      background-image: url(../images/section-products/sectionbg3@3x.jpg);
+      background-image: url(../images/section-products/sectionbg3@3x.jpg) no-repeat top left/cover;
     }
   }
 }
