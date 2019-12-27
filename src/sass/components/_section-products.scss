@@ -1,6 +1,8 @@
 .products-wrapper {
   @media (min-width: 1280px) {
-    background: url(../images/section-products/sectionbg3.jpg) no-repeat center/contain;
+    background: url(../images/section-products/sectionbg3.jpg) no-repeat;
+    background-position: top left;
+    background-size: cover;
   }
 }
 
