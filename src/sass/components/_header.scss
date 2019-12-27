@@ -10,11 +10,11 @@
   background: url(../images/header/header-ice-cream.png) no-repeat 114px 90px/168px,
     url(../images/header/header-bg-circle.png) no-repeat 32px 79px/342px;
 
-  @media screen and (-webkit-min-device-pixel-ratio: 2) {
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background: url(../images/header/header-ice-cream@2x.png) no-repeat 114px 90px/168px,
       url(../images/header/header-bg-circle@2x.png) no-repeat 32px 79px/342px;
   }
-  @media screen and (-webkit-min-device-pixel-ratio: 3) {
+  @media screen and (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
     background: url(../images/header/header-ice-cream@3x.png) no-repeat 114px 90px/168px,
       url(../images/header/header-bg-circle@3x.png) no-repeat 32px 79px/342px;
   }
@@ -28,13 +28,13 @@
       url(../images/header/header-bg-circle.png) no-repeat 300px 32px/323px,
       url(../images/header/header-milk.png) no-repeat 36px 244px/132px;
 
-    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background: url(../images/header/header-ice-cream@2x.png) no-repeat 370px 68px/136px,
         url(../images/header/header-girl@2x.png) no-repeat 555px 264px/172px,
         url(../images/header/header-bg-circle@2x.png) no-repeat 300px 32px/323px,
         url(../images/header/header-milk@2x.png) no-repeat 36px 244px/132px;
     }
-    @media screen and (-webkit-min-device-pixel-ratio: 3) {
+    @media screen and (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
       background: url(../images/header/header-ice-cream@3x.png) no-repeat 370px 68px/136px,
         url(../images/header/header-girl@3x.png) no-repeat 555px 264px/172px,
         url(../images/header/header-bg-circle@3x.png) no-repeat 300px 32px/323px,
@@ -51,13 +51,13 @@
       url(../images/header/header-bg-circle.png) no-repeat 510px 57px/537px,
       url(../images/header/header-milk.png) no-repeat 76px 437px/188px;
 
-    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background: url(../images/header/header-ice-cream@2x.png) no-repeat 657px 109px/229px,
         url(../images/header/header-girl@2x.png) no-repeat 919px 434px/295px,
         url(../images/header/header-bg-circle@2x.png) no-repeat 510px 57px/537px,
         url(../images/header/header-milk@2x.png) no-repeat 76px 437px/188px;
     }
-    @media screen and (-webkit-min-device-pixel-ratio: 3) {
+    @media screen and (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
       background: url(../images/header/header-ice-cream@3x.png) no-repeat 657px 109px/229px,
         url(../images/header/header-girl@3x.png) no-repeat 919px 434px/295px,
         url(../images/header/header-bg-circle@3x.png) no-repeat 510px 57px/537px,
@@ -225,10 +225,10 @@
   text-align: right;
   background: url(../images/header/header-white-circle.png) no-repeat 32px 0px/16px
     padding-box;
-  @media screen and (-webkit-min-device-pixel-ratio: 2) {
+  @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background: url(../images/header/header-white-circle@2x.png) no-repeat 32px 0px/16px padding-box;
   }
-  @media screen and (-webkit-min-device-pixel-ratio: 3) {
+  @media screen and (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
     background: url(../images/header/header-white-circle@3x.png) no-repeat 32px 0px/16px padding-box;
   }
   @media (max-width: 767px) {
@@ -240,10 +240,10 @@
     padding-right: 72px;
     background: url(../images/header/header-white-circle.png) no-repeat 65px 0px/22px
       padding-box;
-    @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background: url(../images/header/header-white-circle@2x.png) no-repeat 65px 0px/22px padding-box;
     }
-    @media screen and (-webkit-min-device-pixel-ratio: 3) {
+    @media screen and (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
       background: url(../images/header/header-white-circle@3x.png) no-repeat 65px 0px/22px padding-box;
     }
   }
